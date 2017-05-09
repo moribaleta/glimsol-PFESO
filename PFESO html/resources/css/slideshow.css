@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color:white;    
+}
+
+img{
+    height: auto;
+    width: 100%;
+}
+/* Slideshow container */
+.mySlides{
+    background: darkgrey;
+}
+
+
+
+.slideshow-container {
+    height:100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background: black;
+}
+
+
+/* Fading animation */
+
+.animate{
+    -webkit-animation:fading 8s;
+    animation:fading 8s;
+}
+
+@-webkit-keyframes fading{
+    /*    0%{
+    opacity:0
+}
+    90%{
+    opacity:1
+}100%{
+    opacity:0
+}*/
+    0%{opacity: 0}
+    20% { opacity: 1}
+    80%{ opacity: 1}
+    100%{opacity: 0}
+}
+
+@keyframes fading{
+    /*0%{
+    opacity:0
+}90%{
+    opacity:1
+}100%{
+    opacity:0
+}*/
+    0%{opacity: 0}
+    20% { opacity: 1}
+    80%{ opacity: 1}
+    100%{opacity: 0}
+}
+
+.slideleft{
+    -webkit-animation:fading 5s infinite;
+    animation:fading 5s infinite
+        transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+@-webkit-keyframes fadout{
+    /*    0%{
+    opacity:0
+}
+    90%{
+    opacity:1
+}100%{
+    opacity:0
+}*/
+    0% { transform: translateX(0%); }
+}
+
+@keyframes fadout{
+    /*0%{
+    opacity:0
+}90%{
+    opacity:1
+}100%{
+    opacity:0
+}*/
+    0% { -webkit-transform: translateX(0%); }
+
+}
+

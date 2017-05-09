@@ -1,0 +1,400 @@
+@font-face{
+    font-family: 'ADAM_font';    
+    src: url('../font/ADAM.otf')  format('truetype');
+}
+@font-face{
+    font-family: 'Karla-Regular';
+    src: url('../font/Karla-Regular.ttf') 
+        format('truetype');
+}
+
+body{    
+    overflow: hidden;
+    margin: 0;
+    background: #161920;
+    color: white;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{        
+    z-index: 5;    
+    display: inline-block;
+    float: left;
+    position: fixed;    
+}
+
+#nav:hover img{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    transition: all .5s ease-in-out;
+}
+#nav img{
+    transition: all .3s ease-in-out;
+    content:url(../images/ic_menu_white_48dp_1x.png);
+}
+#nav:hover img{
+    transition: all .3s ease-in-out;    content:url(../images/ic_clear_white_48dp_1x.png);
+}
+
+#nav #nav_list_ul{    
+
+    text-decoration: none;
+    list-style: none;
+    font-family: 'ADAM_font';
+    -webkit-animation:fadeout 1.2s  ease-out;
+    -moz-animation:fadeout 800ms  ease-out;
+    -o-animation:fadeout 800ms  ease-out;
+    animation:fadeout 1.2s  ease-out;
+    visibility: collapse;
+
+}
+
+#nav:hover #nav_list_ul{
+    visibility: visible;
+    -webkit-animation:fadein 1.2s  ease-in;
+    -moz-animation:fadein 800ms  ease-in;
+    -o-animation:fadein 800ms  ease-in;
+    animation:fadein 1.2s  ease-in;
+}
+
+
+@keyframes fadein3 {
+    0% {        
+        opacity: 0;        
+    }           
+    30% {        
+        opacity: 1;        
+    } 
+}
+@keyframes fadein2 {
+    0% {        
+        opacity: 0;
+        transform: translateY(100px);
+    }           
+    30% {        
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+@keyframes fadein {
+    0% {        
+        opacity: 0;
+        transform: translateX(-100px);          
+    }    
+    30% {                    
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+@keyframes fadeout {
+    0% {        
+        opacity: 1;
+        transform: translateX(0);
+    }           
+    30% {        
+        opacity: 0;
+        transform: translateX(-100px);   
+    } 
+}
+
+#nav_list_ul li{
+    margin-bottom: 10px;
+}
+#nav_list_ul a{    
+    color: white;
+    font-size: 24px;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+#nav_list_ul a:hover{
+    font-size: 28px;
+    margin-bottom: 16px;   
+    color: #00ffe1;
+    transition: all .2s ease-in;
+}
+
+.container{        
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    position:relative;
+    min-height:500px;
+    min-width:500px;
+}
+
+#div_down_button{   
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;      
+}
+#div_down_button:hover{           
+    -webkit-animation:bounce 1.2s  infinite;
+    -moz-animation:bounce 800ms  infinite;
+    -o-animation:bounce 800ms  infinite;
+    animation:bounce 1.2s  infinite;
+}
+
+#div_up_button{    
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    position: absolute;    
+}
+#div_up_button:hover{           
+    -webkit-animation:bounce_down 1.2s  infinite;
+    -moz-animation:bounce_down 800ms  infinite;
+    -o-animation:bounce_down 800ms  infinite;
+    animation:bounce_down 1.2s  infinite;
+}
+
+#div_up_button img{
+    width: 42px;
+    height: 42px;
+}
+#div_down_button img{
+    width: 42px;
+    height: 42px;
+}
+
+@keyframes bounce_down {
+    0% {
+        padding-top: 0;
+        opacity: 0.9;
+    }    
+
+    30% {
+        padding-top: 10;
+        opacity: 1;
+    } 
+
+    80% {
+        padding-top: 0;
+        opacity: 0.9;
+    } 
+}
+
+@keyframes bounce {
+    0% {
+        padding-bottom: 0;
+        opacity: 0.9;
+    }    
+
+    30% {
+        padding-bottom: 10;
+        opacity: 1;
+    } 
+
+    80% {
+        padding-bottom: 0;
+        opacity: 0.9;
+    } 
+}
+/*--------------home container (start)-------------*/
+#home{              
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;      
+}
+#home #home_iframe{
+    width: 100%;
+    height: 100%;    
+    position: fixed;
+    border: none;
+}
+
+#home #home_desc{    
+    -webkit-animation:fadein2 1.2s;
+    -moz-animation:fadein2 1.2s;
+    -o-animation:fadein2 1.2s;
+    animation:fadein2 1.2s;
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    display: inline-block;    
+}
+
+#home h1{        
+    font-size: 64px;
+    font-family: 'ADAM_font';
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+#home h2{    
+    padding-right: 50px;
+    font-size: 48px;
+    font-family: 'Karla-Regular';
+    text-align: right;
+}
+
+#home p{
+    padding-right: 50px;
+    width: 500px;
+    float: right;
+    font-size: 32px;
+    font-family: 'Karla-Regular';
+    text-align: right;
+}
+/*--------------home container (end)-------------*/
+#desc{                   
+     -webkit-animation:fadein3 1.2s;
+    -moz-animation:fadein3 1.2s;
+    -o-animation:fadein3 1.2s;
+    animation:fadein3 1.2s;     
+}
+.desc_fade{
+    -webkit-animation:fadein3 1.2s ease-in-out;
+    -moz-animation:fadein3 1.2s ease-in-out;
+    -o-animation:fadein3 1.2s ease-in-out;
+    animation:fadein3 1.2s ease-in-out;       
+}
+#desc #desc_iframe{ 
+    
+     /*-webkit-animation:fadein3 1.2s ease-in-out;
+    -moz-animation:fadein3 1.2s ease-in-out;
+    -o-animation:fadein3 1.2s ease-in-out;
+    animation:fadein3 1.2s ease-in-out;   */
+    border: none;    
+    width: 100%;
+    height: 100%;    
+    position: absolute;    
+}
+
+#desc #desc_desc{    
+    /*-webkit-animation:fadein3 1.2s ;
+    -moz-animation:fadein3 1.2s ;
+    -o-animation:fadein3 1.2s ;
+    animation:fadein3 1.2s ;*/
+    width: 100%;
+    height: 100%;    
+    text-align: center;
+    position: absolute;    
+    font-family: 'Karla-Regular';
+    font-size: 32px;    
+    color: white;
+    padding-top: 5%;
+}
+#desc #desc_desc>*{    
+    vertical-align: middle;
+}
+/*--------------work container (start)-----------*/
+#works #cards-container{           
+    vertical-align: 30px;   
+    margin-top: 5%;    
+    display: none;
+    font-family: 'Karla-Regular';
+}
+#works #cards{    
+    -webkit-animation:fadein 1.2s;
+    -moz-animation:fadein 800ms;
+    -o-animation:fadein 800ms;
+    animation:fadein 1.2s;
+    margin-right: 20px;
+    height: 350px;
+    width: 350px;
+    background: white;
+    float: left;
+    border-radius: 5px;
+    transition: all .2s ease-in;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px #777777;       
+}
+#cards a{
+    display: inherit;
+    width: inherit;
+}
+
+#cards a .desc{    
+    transition: all .2s ease-in;
+    opacity: 0;
+    width: inherit;
+    color: black;
+    position: absolute;
+}
+
+#cards:hover > a .desc{
+    opacity: 1;
+    width: inherit;
+    transition: all .2s ease-in;
+}
+
+#cards:hover >a img{
+    opacity: 0.3;
+    transition: all .2s ease-in;
+}
+
+
+#cards img{        
+    width: auto;
+    display: inline-block;
+    height: 100%;
+    transition: all .2s ease-in;
+}
+
+#works{
+    text-align: center;
+    background:#CCCCCC;   
+}
+
+#works #cards:hover{    
+    box-shadow: 0px 2px 20px 2px #777777;
+    transition: all .2s ease-in;
+}
+
+
+
+
+/*--------------abouts container (start)-------------*/
+#abouts{    
+    background: url(../images/background1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+} 
+
+#abouts #info{
+    font-family: 'Karla-Regular';
+    text-align: center;
+    margin-top: 25%;
+    display: none;
+    margin-bottom: 50px;
+}
+#abouts #info h2{
+    -webkit-animation:fadein2 1.2s;
+    -moz-animation:fadein2 800ms;
+    -o-animation:fadein2 800ms;
+    animation:fadein2 1.2s;
+}
+#abouts #footer{
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+#abouts #footer h1{ 
+    padding-left: 50px;
+    font-size: 48px;    
+    float: left;
+    font-family: 'ADAM_font';    
+}
+#abouts #footer h2{            
+    float: left;
+    font-family: 'Karla-Regular';
+    text-align: left;        
+}
+/*--------------abouts container (end)-------------*/

@@ -1,0 +1,267 @@
+<html>
+    <head><title>PFESO</title>
+
+        <link rel="stylesheet" href="resources/css/index_style.css">        
+        <script src="resources/js/jquery-3.0.0.min.js"></script>
+        <script src="resources/js/jquery.appear.js"></script>
+    </head>    
+    <body>
+        <div id="header-logo"> 
+            <img src="resources/images/header-logo.png" alt="logo" style="width: 155px; height: 60px;"> 
+        </div>
+        
+        <div id="nav">
+
+            <img id="nav_icon_img">            
+            <ul id="nav_list_ul">
+                <li><a>Location</a></li>
+                <li><a>Affliates</a></li>
+                <li><a>How to Apply</a></li>
+                <li><a>About PFESO</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Sign Up</a></li>
+            </ul>            
+        </div>
+        
+        <div id="con">
+            <div class="container animation-element" id="home">
+                <iframe src="slideshow1.html" id="home_iframe" height="100%" ></iframe>
+                <div id="home_desc">
+                    
+                    
+                    <div id="home_desc2">
+                        <p class="title">Highlights</p>
+
+                        <p id="title2">Bourne Legacy</p>
+
+                        <p id="p_desc">
+                            For two months, the Philippines served as a shooting location for this film, starring Jeremy Renner and Rachel Weisz.
+                        </p>
+
+                        <button> View Locations</button>
+                        <button> How to apply</button>
+                    </div>
+                </div>
+                <!--<div id="div_down_button">                    
+                    <a href="#desc"><img src="resources/images/arrow-down.png"></a>
+                </div> -->
+            </div>
+            <div class="container animation-element" id="desc">    
+                <!--<div id="div_up_button">                    
+                    <a href="#home"><img src="resources/images/arrow-up.png"></a>
+                </div> -->
+                <div id="about-us" class='desc_fade'>
+                    <img src="resources/images/about-us-photo.png" alt="about-us-photo" id="about-us-photo">
+                    
+                    <div id="about-us2">
+                        <p class="title">About Us</p>
+
+                        <p id="title2">Lorem ipsum</p>
+
+                        <p id="p_desc">
+                            Lorem ipsum dolor sit amet, regione tibique at has, mel prompta patque, ad ius iisqu psum dolor sit am et, regione tibique at has, cu mel prom pta patque, ad ius iisqu.
+                        </p>
+                        
+                        <p id="about-us-know-more"><a> Know more about us </a></p>
+                        
+                    </div>
+                    <div id="about-us-logo-div">
+                        <img src="resources/images/about-us-logo.jpg" alt="about-us-photo" id="about-us-logo">
+                    </div>
+                </div>
+                <div id="div_down_button">                    
+                    <a href="#works"><img src="resources/images/arrow-down.png"></a>
+                </div>
+            </div>
+            
+            <div class="container" id="works">
+                <div id="div_up_button">                    
+                    <a href="#desc"><img src="resources/images/arrow-up.png"></a>
+                </div> 
+                
+                <div id="cards-container">                    
+                    <h3>these are some of my works</h3>
+                    <div id="cards">
+                        
+                        <a href="kickster_page.html">
+                            <div class="desc">
+                                <h1>kickster.com</h1>
+                                <h2>a shoe retailer website</h2>
+                            </div>
+                        <img src="resources/images/Brown%20Paper%20Bag%20MockUp.jpg">                        
+                        </a>
+                    </div>                                        
+                    <div id="cards">
+                        <a href="branding_page.html">
+                            <div class="desc">
+                                <h1>company branding</h1>
+                                <h2>conceptual and applicational design to businesses</h2>
+                            </div>
+                        <img src="resources/images/memento-design-wallpaper.jpg">
+                            </a>
+                    </div>                                        
+                    <div id="cards">
+                        <a href="product_design.html">
+                            <div class="desc">
+                                <h1>product design</h1>
+                                <h2>product concept and industrial design for companies</h2>
+                            </div>
+                        <img src="resources/images/mazda-usa.jpg">
+                        </a>
+                    </div>                    
+                </div>                
+                <div id="div_down_button">                    
+                    <a href="#abouts"><img src="resources/images/arrow-down.png"></a>
+                </div>
+            </div>
+            
+            <div class="container" id="abouts">
+                <div id="div_up_button">                    
+                    <a href="#works"><img src="resources/images/arrow-up.png"></a>
+                </div>                 
+                <div id="info">
+                    <h2>email: moribaleta.work@gmail.com</h2>
+                    <h2>contact no: 639273071917</h2>
+                    <h2>instagram @memnto.mori</h2>
+                </div>
+                 <div id="div_down_button">                    
+                    <a href="#abouts"><img src="resources/images/arrow-down.png"></a>
+                </div>
+                <div id="footer">
+                    <h1>moribaleta</h1>
+                    <h2>design</h2>
+                </div>
+            </div>
+            <div class="container" id="abouts">
+                <div id="div_up_button">                    
+                    <a href="#works"><img src="resources/images/arrow-up.png"></a>
+                </div>                 
+                <div id="info">
+                    <h2>email: moribaleta.work@gmail.com</h2>
+                    <h2>contact no: 639273071917</h2>
+                    <h2>instagram @memnto.mori</h2>
+                </div>
+                <div id="footer">
+                    <h1>moribaleta</h1>
+                    <h2>design</h2>
+                </div>
+            </div>
+
+        </div>        
+        <script>           
+            function sleep(miliseconds) {
+                var currentTime = new Date().getTime();
+
+                while (currentTime + miliseconds >= new Date().getTime()) {
+                }
+            }
+            var prev = '#home';
+            $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if(this.hash =='#home'){
+                        $('#footer').fadeOut(800,function(){
+                            $('#footer').css('display','none');
+                        });                                                
+                        console.log('fadeout');                         
+
+                    }
+                    var time = 800;
+                    if((prev=='#home'&&this.hash=='#desc')){
+                        time= 0;
+                    }
+                    console.log(prev+","+this.hash);
+
+
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area                       
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, time, function(){
+                            // Add hash (#) to URL when done scrolling (default click behavior)                         
+                            if(hash=='#desc'&&prev=='#home'){
+                                $('#desc').fadeIn(800,function(){ 
+                                    //$('#desc').css('opacity',1);
+                                    console.log('fadein');                                                                        
+                                    $('#footer').fadeIn(1000,function(){
+                                        $('#footer').css('display','block');
+                                    });
+                                    var elm = document.getElementById('desc_iframe')
+                                    var newone = elm.cloneNode(true);
+                                    elm.parentNode.replaceChild(newone, elm);
+                                    elm = document.getElementById('desc_desc')
+                                    newone = elm.cloneNode(true);
+                                    elm.parentNode.replaceChild(newone, elm);
+                                });
+                            }
+
+                            if(hash =='#works'){
+                                $('#cards-container').fadeIn(0,function(){
+                                    $('#cards-container').css('display','inline-block');
+                                });
+                                $('#footer').fadeIn(0,function(){
+                                    $('#footer').css('display','block');
+                                });
+                            }else{
+                                $('#cards-container').fadeOut(0,function(){
+                                    $('#cards-container').css('display','none');
+                                });
+                            }
+                            if(hash =='#abouts'){
+                                $('#info').fadeIn(0,function(){
+                                    $('#info').css('display','block');
+
+                                });
+                                $('#footer').fadeIn(0,function(){
+                                    $('#footer').css('display','block');
+                                });
+                            }else{
+                                $('#info').fadeOut(0,function(){
+                                    $('#info').css('display','none');
+                                });
+                            }
+
+
+                            window.location.hash = hash;
+                            prev = hash;
+                        });                                             
+
+
+                    } // End if
+
+                });
+            });
+            /*var open = false;
+            function openNav(){
+                if(!open){                         
+                    open = true;    
+                    $('#nav_button').fadeIn(200,function(){
+                        document.getElementById('nav_button').src='resources/images/ic_clear_white_48dp_1x.png';
+                    })
+
+                    $('#nav_list_ul').fadeIn(200,function(){                        
+                        document.getElementById('nav_list_ul').style.display = 'block';                           
+                    });
+                }else{
+                    $('#nav_button').fadeIn(200,function(){
+                        document.getElementById('nav_button').src='resources/images/ic_menu_white_48dp_1x.png';
+                    })
+                    $('#nav_list_ul').fadeIn(200,function(){                       
+                        document.getElementById('nav_list_ul').style.display = 'none';
+
+                    });                     
+                    open = false;
+                }
+            }*/
+        </script>
+    </body>    
+</html>

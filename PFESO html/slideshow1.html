@@ -1,0 +1,63 @@
+<DOCTYPE! HTML>
+
+    <html>
+
+        <head>
+            <script src="resources/js/slideshow.js"></script>
+            <title>About Us </title>
+            <link rel="stylesheet" href="resources/css/slideshow.css">
+
+        </head>
+
+        <body>
+
+            <div class="slideshow-container">
+                <div class="mySlides animate">
+                    <!--h1>keep it real with asics gel lyte III</h1-->
+                    <img src='resources/images/home-slideshow-photo.jpg'>                
+                </div>
+
+                <div class="mySlides animate">
+                    <!--h1>N9000 for the win in Diadora</h1-->
+                    <img src='resources/images/home-slideshow-photo1.jpg'>
+
+                </div>
+
+                <div class="mySlides animate">
+                    <!--h1>New Balance 997 brings the balance of the world</h1-->
+                    <img src='resources/images/home-slideshow-photo2.jpg'>
+
+                </div>
+                <div class="mySlides animate">
+                    <!--h1>keep it tight for the air force</h1-->
+                    <img src='resources/images/home-slideshow-photo3.jpg'>
+
+                </div>
+                <script>
+
+                    var slideIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none"; 
+                        }
+                        slideIndex++;
+                        
+                        if (slideIndex > x.length) {slideIndex = 1} 
+                        x[slideIndex-1].style.display = "block"; 
+                        setCurrent(slideIndex-1);
+                        setTimeout(carousel, 8000); // Change image every 2 seconds
+
+                    }
+
+
+                </script>
+
+                </body>
+
+
+
+            </html>
