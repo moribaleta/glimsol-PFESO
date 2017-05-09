@@ -58,6 +58,11 @@ body{
     width: 100%;
 }
 
+#container-footer{
+    height: 35%;
+    width: 100%;
+}
+
 #header-logo {
     top: 10;
     position: fixed;
@@ -406,12 +411,15 @@ button {
 }
 
 #about-us-logo-div{
-    height: 100%;
+    height: 90%;
     
 }
 #about-us-logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 130px;
-    height: 125px;
+    height: auto;
     z-index: 5;    
 }
 
@@ -452,71 +460,55 @@ button {
     
 }
 /*--------------work container (start)-----------*/
-#works #cards-container{           
-    vertical-align: 30px;   
-    margin-top: 5%;    
-    display: none;
-    font-family: 'Karla-Regular';
-}
-#works #cards{    
-    -webkit-animation:fadein 1.2s;
-    -moz-animation:fadein 800ms;
-    -o-animation:fadein 800ms;
-    animation:fadein 1.2s;
-    margin-right: 20px;
-    height: 350px;
-    width: 350px;
-    background: white;
-    float: left;
-    border-radius: 5px;
-    transition: all .2s ease-in;
-    display: inline-block;
+#how-it-works {
     text-align: center;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px 0px #777777;       
-}
-#cards a{
-    display: inherit;
-    width: inherit;
+    background-image: url("../images/how-it-works-bg.jpg");
+    
 }
 
-#cards a .desc{    
-    transition: all .2s ease-in;
-    opacity: 0;
-    width: inherit;
-    color: black;
-    position: absolute;
-}
-
-#cards:hover > a .desc{
-    opacity: 1;
-    width: inherit;
-    transition: all .2s ease-in;
-}
-
-#cards:hover >a img{
-    opacity: 0.3;
-    transition: all .2s ease-in;
-}
-
-
-#cards img{        
-    width: auto;
-    display: inline-block;
-    height: 100%;
-    transition: all .2s ease-in;
-}
-
-#works{
-    text-align: center;
-    background:#CCCCCC;   
-}
-
-#works #cards:hover{    
+#how-it-works #cards:hover{    
     box-shadow: 0px 2px 20px 2px #777777;
     transition: all .2s ease-in;
 }
 
+#how-it-works2 {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 600px;
+    line-height: 30px;
+    display: block;
+}
+
+#how-it-works2 .title {
+    font-family: 'Karla-Bold';
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 16px;
+}
+
+#how-it-works2 #title2 {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    color: #494949;
+    font-size: 48px;
+    margin: 0;
+}
+
+#how-it-works2 #p_desc {
+    font-family: 'Karla-Regular';
+    color: #494949;
+    font-size: 18px;
+}
+
+#how-it-works-logo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#how-it-works2 button {
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
 
 
@@ -558,4 +550,128 @@ button {
     font-family: 'Karla-Regular';
     text-align: left;        
 }
+
+
+#partners {
+    background-color: white;
+}
+
+#partners #title2 {
+    font-family: 'HelveticaNeueLTStd-Lt';
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+#partners #p_desc {
+    font-family: 'Karla-Regular';
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#partners button {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#apply-now {
+    background-image: url(../images/how-to-apply-bg1.jpg);
+    float: left;
+    width: 50%;
+    height: 60%;
+    text-align: center;    
+}
+
+#apply-now2 {
+    width: 65%;
+    height: 50%;
+    margin: 130px auto;
+}
+
+#get-listed {
+    background-image: url(../images/how-to-apply-bg2.jpg);
+    float: left;
+    width: 50%;
+    height: 60%;
+    text-align: center;    
+}
+
+#get-listed2 {
+    width: 65%;
+    height: 50%;
+    margin: 130px auto;
+}
+
+#support-orgs {
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    float: left;
+    text-align: center;
+    font-family: 'Karla-Bold';
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 16px;
+    
+}
+
+#support-orgs img {
+    margin: 20px 30px;
+}
 /*--------------abouts container (end)-------------*/
+#footer {
+    z-index: 5;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+}
+#message {
+    background-color: #2d3691;
+    border-top: 3px solid #ec2028;
+    text-transform: uppercase;
+    font-family: 'Karla-Bold';
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+#info {
+    color: gray;
+    padding-top: 20px;
+    margin-left: 50px;
+    font-family: 'Karla-Regular';
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+}
+
+#info ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#footer-list{
+    height: 10px;
+    margin-left: 0;
+    
+}
+
+#footer-list li{
+    display: inline;
+    height: 10px;
+    margin-right: 20px;
+    font-family: 'Karla-Bold';
+    
+}
+#footer-logo {
+    float: right;
+    font-family: 'Karla-Bold';
+    font-size: 10pt;
+    color: gray;
+    text-align: center;
+    width: 20%;
+    margin-top: 30px;
+    
+}
