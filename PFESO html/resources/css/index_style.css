@@ -557,22 +557,27 @@ button {
 }
 
 #partners #title2 {
-    font-family: 'HelveticaNeueLTStd-Lt';
+    font-family: 'Karla-Regular';
     color: white;
-    font-size: 30px;
+    font-size: 36px;
+    letter-spacing: 2px;
     margin: 0;
 }
 
 #partners #p_desc {
     font-family: 'Karla-Regular';
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 #partners button {
     text-transform: uppercase;
     margin-top: 20px;
+    font-family: 'Karla-Bold';
+    font-size: 14px;
 }
 
 #apply-now {
@@ -584,9 +589,9 @@ button {
 }
 
 #apply-now2 {
-    width: 65%;
+    width: 70%;
     height: 50%;
-    margin: 130px auto;
+    margin: 90px auto;
 }
 
 #get-listed {
@@ -598,9 +603,9 @@ button {
 }
 
 #get-listed2 {
-    width: 65%;
+    width: 70%;
     height: 50%;
-    margin: 130px auto;
+    margin: 90px auto;
 }
 
 #support-orgs {
